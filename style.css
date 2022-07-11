@@ -1,0 +1,227 @@
+:root {
+    --bege: #e5ceb3;
+    --marrom: #282320;
+}
+
+@font-face {
+    font-family: fallinlove;
+    src: url('./assets/fonts/falls.ttf')
+}
+
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+body,
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu a {
+    color: var(--bege);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#logo img {
+    width: 100px;
+}
+
+#header {
+    box-sizing: border-box;
+    height: 100px;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--marrom);
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+#menu a {
+    display: block;
+    padding: 0.5rem;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.s1 {
+    height: calc(100vh - 100px);
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--marrom);
+    color: var(--bege);
+}
+
+.s1Container {
+    border: 1px solid green;
+    margin: 0 100px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.s1ContainerText {
+    height: 50%;
+    border: 1px solid purple;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.s1ContainerText h1 {
+    margin: 0;
+    font-family: fallinlove;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+.s1ContainerText p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.s1ContainerImage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid pink;
+    align-items: center;
+}
+
+
+.s1ContainerImage img {
+    width: 500px;
+}
+
+.saibaMais {
+    background-color: #e5ceb3;
+    width: 200px;
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--marrom);
+    font-size: 20px;
+}
+
+.s2 {
+    height: 100vh;
+    background-color: var(--bege);
+    width: 100%;
+}
+
+.s2Container {
+    margin: 0 100px;
+    border: 1px solid gold;
+}
+
+.s2Container h1 {
+    margin: 0;
+    font-family: fallinlove, sans-serif;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+
+    #header {
+        padding: 2rem;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        right: 0px;
+        background: var(--marrom);
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 100px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        text-align: center;
+        padding: 2rem 0;
+        margin: 0 2rem;
+        border-bottom: 1px solid var(--bege);
+    }
+
+    #btn-mobile {
+        color: var(--bege);
+        display: flex;
+        padding: 0.5rem 0rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .s1 {}
+
+    .s1Container,
+    .s2Container {
+        margin: 0 2rem;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .s1ContainerText p {
+        font-size: 18px;
+    }
+
+    .s1ContainerImage {}
