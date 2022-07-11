@@ -18,12 +18,7 @@ function toggleMenu(event) {
 }
 
 btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu);
 aboutUs.addEventListener('click', toggleMenu);
-aboutUs.addEventListener('touchstart', toggleMenu);
 product.addEventListener('click', toggleMenu);
-product.addEventListener('touchstart', toggleMenu);
 costumer.addEventListener('click', toggleMenu);
-costumer.addEventListener('touchstart', toggleMenu);
 contact.addEventListener('click', toggleMenu);
-contact.addEventListener('touchstart', toggleMenu);
