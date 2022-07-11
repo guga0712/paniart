@@ -135,7 +135,6 @@ ul {
     width: 80%;
     height: 70%;
     border: 1px solid red;
-    max-width: 1480px;
     color: var(--marrom);
     align-items: center;
     flex-direction: column;
@@ -169,8 +168,12 @@ ul {
 .s2ContainerText h2,
 .s2ContainerText h3 {
     margin: 0;
-    margin-bottom: 10px;
     text-align: start;
+}
+
+.s2ContainerText h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .s2ContainerText h2 {
@@ -196,6 +199,35 @@ ul {
 .s2ContainerImages img {
     width: auto;
 }
+
+.s3 {
+    height: 100vh;
+    background-color: var(--marrom);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s3Container {
+    display: flex;
+    width: 80%;
+    height: 70%;
+    border: 1px solid red;
+    color: var(--bege);
+    align-items: center;
+    flex-direction: column;
+}
+
+.s3Container h1 {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 50px;
+    font-family: fallinlove, sans-serif;
+    font-weight: 100;
+}
+
+
 
 
 
@@ -286,16 +318,21 @@ ul {
     .s2ContainerContent {
         flex-direction: column;
         justify-content: space-between;
+        margin: 0 2rem;
     }
 
     .s2Container {
         height: 100vh;
         width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
     .s2ContainerText {
-        height: 70%;
+        height: 60%;
+        width: 100%;
     }
+
 
     .s2ContainerText h2,
     .s2ContainerText h3 {
@@ -317,14 +354,28 @@ ul {
     .s2ContainerImages {
         flex-direction: row;
         justify-content: space-between;
+        width: 100%;
     }
+
+    .s2ContainerImages img {
+        width: 400px;
+    }
+
+    .s3Container {
+        width: 100%;
+        height: 100vh;
+        margin: 0 2rem;
+    }
+
+
 }
 
 
 @media (max-width: 768px) {
 
     .s1,
-    .s2 {
+    .s2,
+    .s3 {
         width: 100%;
     }
 
@@ -353,7 +404,6 @@ ul {
         width: auto;
     }
 
-
     .s2ContainerText h2 {
         font-size: 25px;
     }
@@ -375,11 +425,18 @@ ul {
 
     .s2ContainerImages img {
         width: 100%;
-        height: 200px;
+        height: 250px;
 
     }
 
     #imgSobra {
         display: none;
     }
+
+    .s3Container {
+        height: 100vh;
+    }
+
+
+
 }
