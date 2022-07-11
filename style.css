@@ -409,11 +409,13 @@ ul {
     }
 
     .s2ContainerText h3 {
-        font-size: 20px;
+        margin: 0;
+        font-size: 17px;
+        font-weight: bold;
     }
 
     .s2ContainerText p {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .s2ContainerImages {
