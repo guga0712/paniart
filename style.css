@@ -19,12 +19,14 @@ body,
 ul {
     margin: 0px;
     padding: 0px;
+    background-color: #282320;
 }
 
 #menu a {
     color: var(--bege);
     text-decoration: none;
     font-family: sans-serif;
+
 }
 
 #logo img {
@@ -39,12 +41,14 @@ ul {
     align-items: center;
     justify-content: space-between;
     background: var(--marrom);
+    border-bottom: 1px solid var(--bege);
 }
 
 #menu {
     display: flex;
     list-style: none;
     gap: 0.5rem;
+
 }
 
 #menu a {
@@ -58,7 +62,7 @@ ul {
 
 .s1 {
     height: calc(100vh - 100px);
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -68,7 +72,7 @@ ul {
 }
 
 .s1Container {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin: 0 100px;
     height: 80%;
     display: flex;
@@ -135,7 +139,7 @@ ul {
     display: flex;
     height: 80%;
     margin: 0 100px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     color: var(--marrom);
     align-items: center;
     flex-direction: column;
@@ -153,12 +157,12 @@ ul {
 
 .s2ContainerContent {
     display: flex;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 100%;
 }
 
 .s2ContainerText {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -192,7 +196,7 @@ ul {
 .s2ContainerImages {
     display: flex;
     flex-direction: column;
-    border: 1px solid magenta;
+    /* border: 1px solid magenta; */
     justify-content: space-between;
     width: 30%;
 }
@@ -215,7 +219,7 @@ ul {
     width: 100%;
     height: 80%;
     margin: 0 100px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     color: var(--bege);
     align-items: center;
     flex-direction: column;
@@ -230,6 +234,53 @@ ul {
 }
 
 
+.s3Container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.s3Products {
+    display: flex;
+    gap: 100px;
+}
+
+.s3Product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--marrom);
+    background-color: var(--bege);
+    width: 300px;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.s3ProductInfo h2,
+.s3ProductInfo p {
+    margin: 0;
+}
+
+.s3ProductInfo h2 {
+    font-size: 20px;
+}
+
+.s3Contact {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--bege);
+}
+
+.s3Product img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
 
 
 
@@ -237,6 +288,7 @@ ul {
 
     #header {
         padding: 2rem;
+        margin: 0;
     }
 
     #menu {
@@ -313,8 +365,16 @@ ul {
         height: 100%;
     }
 
+    .s1ContainerText h1 {
+        margin-top: 20px;
+    }
+
     .s1ContainerText p {
         font-size: 20px;
+    }
+
+    .saibaMais {
+        font-size: 15px;
     }
 
     .s2ContainerContent {
@@ -323,12 +383,27 @@ ul {
         margin: 0 2rem;
     }
 
+
+    .s2,
+    .s3 {
+        height: 100%;
+    }
+
+    .s2,
+    .s3 {
+        padding: 50px 0;
+    }
+
     .s2Container {
-        height: 100vh;
+        height: auto;
         width: 100%;
         align-items: center;
         justify-content: center;
         margin: 0;
+    }
+
+    .s2ContainerContent {
+        gap: 50px;
     }
 
     .s2ContainerText {
@@ -366,8 +441,14 @@ ul {
 
     .s3Container {
         width: 100%;
-        height: 100vh;
+        height: auto;
         margin: 0 2rem;
+        gap: 50px;
+    }
+
+    .s3Products {
+        flex-direction: column;
+        gap: 50px;
     }
 
 
@@ -383,7 +464,7 @@ ul {
     }
 
     .s1ContainerText {
-        height: 50%;
+        height: 80%;
     }
 
     .s1ContainerText h1 {
@@ -407,18 +488,25 @@ ul {
         width: auto;
     }
 
+    .s2Container h1 {
+        margin-bottom: 20px;
+
+    }
+
     .s2ContainerText h2 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .s2ContainerText h3 {
         margin: 0;
+        margin-top: 20px;
         font-size: 17px;
         font-weight: bold;
     }
 
     .s2ContainerText p {
         font-size: 14px;
+        text-align: center;
     }
 
     .s2ContainerImages {
@@ -439,7 +527,7 @@ ul {
     }
 
     .s3Container {
-        height: 100vh;
+        height: auto;
     }
 
 
