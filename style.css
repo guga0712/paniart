@@ -780,7 +780,7 @@ footer {
     }
 
     .s4 {
-        height: 50vh;
+        height: 100vh;
     }
 
 
@@ -859,6 +859,10 @@ footer {
 
     .s4Content p {
         font-size: 20px;
+    }
+
+    .cta2 {
+        width: 300px;
     }
 
 
