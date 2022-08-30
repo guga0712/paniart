@@ -39,6 +39,14 @@ ul {
     font-weight: 100;
 }
 
+.tituloBegeProduct {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 80px;
+    font-family: fallinlove, sans-serif;
+    font-weight: 100;
+}
+
 
 .fundo {
     position: absolute;
@@ -523,6 +531,10 @@ footer {
         font-size: 60px;
     }
 
+    .tituloBegeProduct {
+        font-size: 60px;
+    }
+
     .tituloMarrom {
         font-size: 60px;
     }
@@ -536,8 +548,6 @@ footer {
         justify-content: space-between;
         width: calc(100% - 100px);
     }
-
-    .s2ContainerText {}
 
     .s3Product {
         width: 300px;
@@ -798,6 +808,10 @@ footer {
         font-size: 60px;
     }
 
+    .tituloBegeProduct {
+        font-size: 50px;
+    }
+
     .s1ContainerText p {
         font-size: 17px;
     }
@@ -863,6 +877,11 @@ footer {
 
     .cta2 {
         width: 300px;
+    }
+
+    footer p {
+        width: 350px;
+        text-align: center;
     }
 
 
