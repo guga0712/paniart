@@ -248,6 +248,10 @@ ul {
     border-radius: 10px;
 }
 
+#imgSobra {
+    margin-top: 50px;
+}
+
 .s3 {
     height: auto;
     background-color: var(--marrom);
@@ -302,6 +306,12 @@ ul {
 .s3ProductInfo p {
     margin: 0;
 }
+
+/* 
+.s3ProductInfo p {
+    width: 400px;
+    text-align: center;
+} */
 
 .s3ProductInfo h2 {
     font-size: 20px;
@@ -858,7 +868,7 @@ footer {
     }
 
     .s2ContainerImages img {
-        width: 100%;
+        width: 400px;
         height: 250px;
 
     }
