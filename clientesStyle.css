@@ -71,7 +71,7 @@ ul {
 }
 
 .s1 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: auto;
     /* height: 200vh; */
     display: flex;
@@ -80,6 +80,7 @@ ul {
     color: var(--bege);
     position: relative;
     background-size: contain;
+    padding: 50px 0;
 }
 
 .s1Container {
@@ -121,6 +122,108 @@ ul {
 .s1Costumer img {
     width: 400px;
     border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    background-color: var(--marrom);
+    border-top: 1px solid var(--bege);
+    color: var(--bege);
+}
+
+.footerContent {
+    /* border: 1px solid red; */
+    padding: 20px 0;
+    height: 100%;
+    align-items: center;
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.footerContent h3 {
+    margin: 0 0 15px 0;
+}
+
+.footerInfo,
+.footerMenu,
+.footerSocials {
+    width: 400px;
+}
+
+.footerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+
+.footerInfo img {
+    width: 100px;
+}
+
+.footerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footerA,
+.footerB {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.footerB img {
+    width: 100px;
+}
+
+.footerSocials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footerA a,
+.footerB a {
+    text-decoration: none;
+    color: var(--bege);
+    width: fit-content;
+}
+
+.footerB img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.social {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: #e5ceb3;
+    text-align: center;
+}
+
+.right p {
+    opacity: 0.3;
 }
 
 @media (max-width: 1600px) {
@@ -236,4 +339,30 @@ ul {
     .s1Costumer img {
         width: 250px;
     }
+
+    .footerContent {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+
+    .right {
+        width: 300px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    footer p {
+        width: 350px;
+        text-align: center;
+    }
+
 }
