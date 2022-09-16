@@ -25,7 +25,7 @@ ul {
 .tituloBege {
     margin: 0;
     padding-top: 10px;
-    font-size: 70px;
+    font-size: 60px;
     font-family: fallinlove, sans-serif;
     font-weight: 100;
     margin-bottom: 20px;
@@ -115,7 +115,7 @@ ul {
 .s1Costumer h2 {
     color: var(--marrom);
     margin: 0 0 10px 0;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 
