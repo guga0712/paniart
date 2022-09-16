@@ -171,7 +171,20 @@ ul {
     cursor: pointer;
 }
 
-
+.ctaSaibaMais {
+    color: #282320;
+    background: #e5ceb3;
+    text-decoration: overline;
+    padding: 10px;
+    width: 200px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
 
 .s2 {
     padding: 100px 0;
