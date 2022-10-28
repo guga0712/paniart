@@ -37,11 +37,14 @@
             <ul id="menu" role="menu">
                 <li><a id="aboutButton" href="#s2">Sobre nós</a></li>
                 <li><a id="productsButton" href="#s3">Produtos</a></li>
-                <li><a id="costumerButton" href="./clientes.html">Clientes</a></li>
+                <!-- <li><a id="costumerButton" href="./clientes.html">Clientes</a></li> -->
                 <li><a id="contactButton" href="#s4">Contato</a></li>
             </ul>
         </nav>
     </header>
+    <div class="whatsappButton">
+        <img src="./assets/images/whatsapp-128.png" alt="">
+    </div>
     <div class="s1">
         <img class="fundo" src="./assets/images/ARESTACOMPÃES.png" alt="">
         <div class="s1Container">
@@ -108,22 +111,21 @@
                     <img src="assets/images/briochee.png" alt="">
                     <div class="s3ProductInfo">
                         <h2>Pão Brioche</h2>
-                        <p>Pão hidratado com ovos que possui muito sabor e aroma, cobertura de gema e manteiga.</p>
+                        <p>Pão Brioche</p>
                     </div>
                 </div>
                 <div class="s3Product">
                     <img src="assets/images/gergelim.png" alt="">
                     <div class="s3ProductInfo">
                         <h2>Pão Tradicional com Gergelim</h2>
-                        <p>Pão de hambúrguer original (coberturas e tamanhos podem variar de acordo com a solicitação)
-                        </p>
+                        <p>Pão tradicional com gergelim</p>
                     </div>
                 </div>
                 <div class="s3Product">
                     <img src="assets/images/britzel.png" alt="">
                     <div class="s3ProductInfo">
                         <h2>Pão Britzel</h2>
-                        <p>O queridinho brioche em formato de pretzel coberto com grãos de gergelim.</p>
+                        <p>Pão Britzel</p>
                     </div>
                 </div>
             </div>
@@ -139,8 +141,8 @@
                 <div class="s3Product">
                     <img src="assets/images/mini-pao-hamburguer-vermelho.png" alt="">
                     <div class="s3ProductInfo">
-                        <h2>Mini pão de hambúrguer Vermelho</h2>
-                        <p>Massa cor vermelha trabalhada artesanalmente com levain coberta com Gergelim.</p>
+                        <h2>Mini pães de hambúrguer coloridos</h2>
+                        <p>Mini pães de hambúrguer coloridos</p>
                     </div>
                 </div>
                 <div class="s3Product">
@@ -157,26 +159,26 @@
                     <img src="assets/images/baguete-integral.png" alt="">
                     <div class="s3ProductInfo">
                         <h2>Baguete Integral</h2>
-                        <p>Baguete integral com mix de grãos, trabalhada artesanalmente.</p>
+                        <p>Baguete integral</p>
                     </div>
                 </div>
                 <div class="s3Product">
                     <img src="assets/images/baguete-parmesao.png" alt="">
                     <div class="s3ProductInfo">
                         <h2>Baguete Parmesão</h2>
-                        <p>Massa trabalhada artesanalmente coberta com Parmesão.</p>
+                        <p>Baguete com parmesão</p>
                     </div>
                 </div>
                 <div class="s3Product">
                     <img src="assets/images/baguete-semi-italiano.png" alt="">
                     <div class="s3ProductInfo">
                         <h2>Baguete Semi-italiano</h2>
-                        <p>Massa artesanalmente fermentada, sem sova, crocante por fora e macio por dentro.</p>
+                        <p>Baguete Semi-italiano</p>
                     </div>
                 </div>
             </div>
             <!--    ################################################################################### -->
-            <div class="moreProducts" id="moreProducts">
+            <div class="moreProducts" id="moreProducts" style="display: none">
                 <div class="s3Products">
                     <div class="s3Product">
                         <img src="assets/images/ciabatta.png" alt="">
@@ -193,30 +195,6 @@
                         </div>
                     </div>
                     <div class="s3Product">
-                        <img src="assets/images/mini-pao-hamburguer-preto.png" alt="">
-                        <div class="s3ProductInfo">
-                            <h2>Mini pão de hambúrguer Preto</h2>
-                            <p>Massa cor preta trabalhada artesanalmente com levain coberta com Gergelim.</p>
-                        </div>
-                    </div>
-                </div>
-                <!--    ################################################################################### -->
-                <div class="s3Products">
-                    <div class="s3Product">
-                        <img src="assets/images/mini-pao-hamburguer-azul.png" alt="">
-                        <div class="s3ProductInfo">
-                            <h2>Mini pão de hambúrguer Azul</h2>
-                            <p>Massa cor azul trabalhada artesanalmente com levain coberta com Gergelim.</p>
-                        </div>
-                    </div>
-                    <div class="s3Product">
-                        <img src="assets/images/focaccia.png" alt="">
-                        <div class="s3ProductInfo">
-                            <h2>Pão Focaccia</h2>
-                            <p>Pão Focaccia.</p>
-                        </div>
-                    </div>
-                    <div class="s3Product">
                         <img src="assets/images/pao-frances-bola.png" alt="">
                         <div class="s3ProductInfo">
                             <h2>Pão francês bola</h2>
@@ -225,7 +203,14 @@
                     </div>
                 </div>
                 <!--    ################################################################################### -->
-                <div class="s3Products" style="justify-content: center">
+                <div class="s3Products">
+                    <div class="s3Product">
+                        <img src="assets/images/focaccia.png" alt="">
+                        <div class="s3ProductInfo">
+                            <h2>Pão Focaccia</h2>
+                            <p>Pão Focaccia.</p>
+                        </div>
+                    </div>
                     <div class="s3Product">
                         <img src="assets/images/pao-de-hamburguer-tradicional-pincelado-com-mix-de-gergelim.png" alt="">
                         <div class="s3ProductInfo">
@@ -235,10 +220,12 @@
                         </div>
                     </div>
                 </div>
+                <!--    ################################################################################### -->
             </div>
-            <button class="cta" id="moreProductsButton">Ver Mais ▼</button>
             <!--    ################################################################################### -->
+            <button class="cta" id="moreProductsButton">Ver MAIS ▼</button>
         </div>
+
     </div>
     <div class="s4" id="s4">
         <div class="s4Container">
@@ -266,8 +253,8 @@
                 <div class="footerA">
                     <a href="#s2">Sobre nós</a>
                     <a href="#s3">Produtos</a>
-                    <a href="./clientes.html">Nossos clientes</a>
-                    <a href="#s5">Contato</a>
+                    <!-- <a href="./clientes.html">Nossos clientes</a> -->
+                    <a href="#s4">Contato</a>
                 </div>
             </div>
             <div class="footerSocials">
